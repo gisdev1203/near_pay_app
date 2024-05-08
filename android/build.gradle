@@ -1,0 +1,24 @@
+buildscript {
+    ext.kotlin_version = '1.9.23'
+    
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+         // [required] background_fetch
+        maven { url "${project(':background_fetch').projectDir}/libs" }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
