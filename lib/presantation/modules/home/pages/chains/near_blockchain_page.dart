@@ -5,18 +5,18 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchains.dart';
 import 'package:flutterchain/flutterchain_lib/services/chains/near_blockchain_service.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/export_key_in_near_api_js_format_action.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/login_with_mynear_wallet.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_activate_testnet_account.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_add_key_action.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_crypto_action_header.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_delete_key_action.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_insert_new_blockchaindata_action.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_make_action_with_injected_private_key.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_smart_contract_call_action.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_transfer_action.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/near_vm.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/ui_state.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/export_key_in_near_api_js_format_action.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/login_with_mynear_wallet.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_activate_testnet_account.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_add_key_action.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_crypto_action_header.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_delete_key_action.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_insert_new_blockchaindata_action.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_make_action_with_injected_private_key.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_smart_contract_call_action.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_transfer_action.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/near_vm.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/ui_state.dart';
 
 
 class NearBlockchainPage extends StatefulWidget {

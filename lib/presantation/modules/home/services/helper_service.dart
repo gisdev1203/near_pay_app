@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:near_pay_app/network/helper_network.dart';
+import 'package:near_pay_app/data/network/helper_network.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 

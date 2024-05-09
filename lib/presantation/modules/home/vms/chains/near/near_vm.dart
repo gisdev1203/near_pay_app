@@ -9,10 +9,10 @@ import 'package:flutterchain/flutterchain_lib/models/chains/near/near_blockchain
 import 'package:flutterchain/flutterchain_lib/models/core/blockchain_response.dart';
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
 import 'package:flutterchain/flutterchain_lib/services/chains/near_blockchain_service.dart';
-import 'package:near_pay_app/modules/home/services/helper_service.dart';
-import 'package:near_pay_app/modules/home/stores/chains/near_blockchain_store.dart';
-import 'package:near_pay_app/modules/home/stores/core/user_store.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/ui_state.dart';
+import 'package:near_pay_app/presantation/modules/home/services/helper_service.dart';
+import 'package:near_pay_app/presantation/modules/home/stores/chains/near_blockchain_store.dart';
+import 'package:near_pay_app/presantation/modules/home/stores/core/user_store.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/ui_state.dart';
 
 import 'package:rxdart/rxdart.dart';
 

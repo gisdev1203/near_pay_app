@@ -1,6 +1,6 @@
 
-import 'package:near_pay_app/models/user.dart';
-import 'package:near_pay_app/services/user_service.dart';
+import 'package:near_pay_app/core/models/user.dart';
+import 'package:near_pay_app/presantation/services/user_service.dart';
 
 class UserRepository {
   final UserService _userService;

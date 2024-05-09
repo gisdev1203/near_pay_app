@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:near_pay_app/network/model/response/block_item.dart';
+import 'package:near_pay_app/data/network/model/response/block_item.dart';
 
 
 

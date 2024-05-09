@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchains.dart';
-import 'package:near_pay_app/modules/home/components/chains/bitcoin/bitcoin_crypto_action_header.dart';
-import 'package:near_pay_app/modules/home/components/chains/bitcoin/bitcoin_transfer_action.dart';
-import 'package:near_pay_app/modules/home/vms/chains/bitcoin/bitcoin_vm.dart';
-import 'package:near_pay_app/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
-import 'package:near_pay_app/services/chains/bitcoin_blockchain_service.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/bitcoin/bitcoin_crypto_action_header.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/bitcoin/bitcoin_transfer_action.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/bitcoin/bitcoin_vm.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
+import 'package:near_pay_app/presantation/services/chains/bitcoin_blockchain_service.dart';
 
 
 class BitcoinBlockchainPage extends StatefulWidget {

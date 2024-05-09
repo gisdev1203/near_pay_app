@@ -2,7 +2,7 @@ import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchai
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
 
 
-import '../services/contract_service.dart';
+import 'package:near_pay_app/presantation/services/contract_service.dart';
 
 class ContractRepository {
   final ContractService _contractService;

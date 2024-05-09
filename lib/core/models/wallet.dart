@@ -1,8 +1,8 @@
 import 'package:decimal/decimal.dart';
 import 'package:intl/intl.dart';
-import 'package:near_pay_app/models/available_currency.dart';
-import 'package:near_pay_app/network/model/response/account_history_response_item.dart';
-import 'package:near_pay_app/utils/numberutil.dart';
+import 'package:near_pay_app/core/models/available_currency.dart';
+import 'package:near_pay_app/data/network/model/response/account_history_response_item.dart';
+import 'package:near_pay_app/presantation/utils/numberutil.dart';
 
 
 /// Main wallet object that's passed around the app via state

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:near_pay_app/appstate_container.dart';
 import 'package:near_pay_app/localization.dart';
 import 'package:near_pay_app/styles.dart';
-import 'package:near_pay_app/ui/util/ui_util.dart';
-import 'package:near_pay_app/ui/widgets/outline_button.dart';
-import 'package:near_pay_app/utils/user_data_util.dart';
+import 'package:near_pay_app/presantation/ui/util/ui_util.dart';
+import 'package:near_pay_app/presantation/ui/widgets/outline_button.dart';
+import 'package:near_pay_app/presantation/utils/user_data_util.dart';
 
 
 /// A widget for displaying a mnemonic phrase

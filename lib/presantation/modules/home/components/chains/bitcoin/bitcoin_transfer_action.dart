@@ -3,12 +3,12 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutterchain/flutterchain_lib/constants/core/blockchain_response.dart';
-import 'package:near_pay_app/models/chains/bitcoin/bitcoin_transfer_request.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_action_text_field.dart';
-import 'package:near_pay_app/modules/home/components/core/crypto_actions_card.dart';
-import 'package:near_pay_app/modules/home/vms/chains/bitcoin/bitcoin_vm.dart';
-import 'package:near_pay_app/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/data/chains/bitcoin/bitcoin_transfer_request.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_action_text_field.dart';
+import 'package:near_pay_app/presantation/modules/home/components/core/crypto_actions_card.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/bitcoin/bitcoin_vm.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
 
 
 class BitcoinTransferAction extends StatefulWidget {

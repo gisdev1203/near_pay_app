@@ -6,11 +6,11 @@ import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchai
 
 import 'package:flutterchain/flutterchain_lib/models/core/blockchain_response.dart';
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
-import 'package:near_pay_app/models/chains/bitcoin/bitcoin_transfer_request.dart';
-import 'package:near_pay_app/modules/home/services/helper_service.dart';
-import 'package:near_pay_app/modules/home/stores/chains/bitcoin_blockchain_store.dart';
-import 'package:near_pay_app/modules/home/stores/core/user_store.dart';
-import 'package:near_pay_app/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
+import 'package:near_pay_app/data/chains/bitcoin/bitcoin_transfer_request.dart';
+import 'package:near_pay_app/presantation/modules/home/services/helper_service.dart';
+import 'package:near_pay_app/presantation/modules/home/stores/chains/bitcoin_blockchain_store.dart';
+import 'package:near_pay_app/presantation/modules/home/stores/core/user_store.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/bitcoin/ui_state_bitcoin.dart';
 
 import 'package:rxdart/rxdart.dart';
 

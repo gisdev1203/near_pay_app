@@ -9,9 +9,9 @@ import 'package:flutterchain/flutterchain_lib/models/core/blockchain_response.da
 import 'package:flutterchain/flutterchain_lib/network/core/network_core.dart';
 import 'dart:async';
 
-import 'package:near_pay_app/constants/chains/bitcoin_blockchain_network_urls.dart';
-import 'package:near_pay_app/formaters/chains/bitcoin_formater.dart';
-import 'package:near_pay_app/models/chains/bitcoin/bitcoin_transaction_info.dart';
+import 'package:near_pay_app/core/constants/chains/bitcoin_blockchain_network_urls.dart';
+import 'package:near_pay_app/core/formaters/chains/bitcoin_formater.dart';
+import 'package:near_pay_app/data/chains/bitcoin/bitcoin_transaction_info.dart';
 
 
 class BitcoinRpcClient {

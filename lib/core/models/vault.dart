@@ -2,9 +2,9 @@ import 'package:flutter/services.dart';
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:near_pay_app/service_locator.dart';
-import 'package:near_pay_app/utils/encrypt.dart';
-import 'package:near_pay_app/utils/random_util.dart';
-import 'package:near_pay_app/utils/sharedprefsutil.dart';
+import 'package:near_pay_app/presantation/utils/encrypt.dart';
+import 'package:near_pay_app/presantation/utils/random_util.dart';
+import 'package:near_pay_app/presantation/utils/sharedprefsutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 

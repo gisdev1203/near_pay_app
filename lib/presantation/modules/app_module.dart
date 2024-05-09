@@ -12,13 +12,13 @@ import 'package:flutterchain/flutterchain_lib/services/chains/near_blockchain_se
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:near_pay_app/main.dart';
-import 'package:near_pay_app/modules/home/pages/core/create_wallet_page.dart';
-import 'package:near_pay_app/modules/home/pages/core/crypto_actions_page.dart';
-import 'package:near_pay_app/modules/home/pages/core/home_page.dart';
-import 'package:near_pay_app/modules/home/services/helper_service.dart';
-import 'package:near_pay_app/network/helper_network.dart';
-import 'package:near_pay_app/routes/routes.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/create_wallet_page.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/crypto_actions_page.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/home_page.dart';
+import 'package:near_pay_app/presantation/modules/home/services/helper_service.dart';
+import 'package:near_pay_app/data/network/helper_network.dart';
+import 'package:near_pay_app/presantation/routes/routes.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 class AppModule extends Module {

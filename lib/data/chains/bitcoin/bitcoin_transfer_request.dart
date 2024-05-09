@@ -2,7 +2,7 @@ import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchai
 import 'package:flutterchain/flutterchain_lib/models/core/blockchain_smart_contract_arguments.dart';
 
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
-import 'package:near_pay_app/models/core/transfer_request.dart';
+import 'package:near_pay_app/data/core/transfer_request.dart';
 
 class BitcoinTransferRequest implements TransferRequest {
   @override

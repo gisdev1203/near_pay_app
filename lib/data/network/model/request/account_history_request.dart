@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:near_pay_app/network/model/base_request.dart';
-import 'package:near_pay_app/network/model/request/actions.dart';
+import 'package:near_pay_app/data/network/model/base_request.dart';
+import 'package:near_pay_app/data/network/model/request/actions.dart';
 
 
 part 'account_history_request.g.dart';

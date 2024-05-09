@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchains.dart';
-import 'package:near_pay_app/modules/home/pages/chains/near_blockchain_page.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/chains/near_blockchain_page.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
 
 
 class CryptoActionsPage extends StatelessWidget {

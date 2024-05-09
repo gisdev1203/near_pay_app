@@ -2,7 +2,7 @@
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
-import 'package:near_pay_app/blockchain/blockchain_wallet_service.dart';
+import 'package:near_pay_app/core/blockchain/blockchain_wallet_service.dart';
 
 
 class FlutterchainIntegration extends StatefulWidget {

@@ -2,9 +2,9 @@
 
 import 'dart:async';
 import 'dart:io' as io;
-import 'package:near_pay_app/models/db/account.dart';
-import 'package:near_pay_app/models/db/contact.dart';
-import 'package:near_pay_app/utils/walletutil.dart';
+import 'package:near_pay_app/core/models/db/account.dart';
+import 'package:near_pay_app/core/models/db/contact.dart';
+import 'package:near_pay_app/presantation/utils/walletutil.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';

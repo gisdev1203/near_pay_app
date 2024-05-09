@@ -4,7 +4,7 @@ import 'dart:convert';
 
 
 import 'package:json_annotation/json_annotation.dart';
-import 'package:near_pay_app/network/model/block_types.dart';
+import 'package:near_pay_app/data/network/model/block_types.dart';
 
 
 part 'state_block.g.dart';
