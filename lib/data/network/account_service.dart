@@ -1,38 +1,39 @@
-// ignore_for_file: constant_identifier_names, unnecessary_null_comparison
+// ignore_for_file: constant_identifier_names, unnecessary_null_comparison, avoid_web_libraries_in_flutter
 
 import 'dart:async';
 import 'dart:collection';
 import 'dart:convert';
+import 'dart:html';
 
 
 import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
-import 'package:near_pay_app/bus/callback_event.dart';
-import 'package:near_pay_app/bus/conn_status_event.dart';
-import 'package:near_pay_app/bus/error_response_event.dart';
-import 'package:near_pay_app/bus/price_event.dart';
-import 'package:near_pay_app/bus/subscribe_event.dart';
-import 'package:near_pay_app/models/state_block.dart';
-import 'package:near_pay_app/network/model/base_request.dart';
-import 'package:near_pay_app/network/model/block_types.dart';
-import 'package:near_pay_app/network/model/request/account_history_request.dart';
-import 'package:near_pay_app/network/model/request/account_info_request.dart';
-import 'package:near_pay_app/network/model/request/accounts_balances_request.dart';
-import 'package:near_pay_app/network/model/request/block_info_request.dart';
-import 'package:near_pay_app/network/model/request/pending_request.dart';
-import 'package:near_pay_app/network/model/request/process_request.dart';
-import 'package:near_pay_app/network/model/request/subscribe_request.dart';
-import 'package:near_pay_app/network/model/request_item.dart';
-import 'package:near_pay_app/network/model/response/account_history_response.dart';
-import 'package:near_pay_app/network/model/response/account_info_response.dart';
-import 'package:near_pay_app/network/model/response/accounts_balances_response.dart';
-import 'package:near_pay_app/network/model/response/alerts_response_item.dart';
-import 'package:near_pay_app/network/model/response/block_info_item.dart';
-import 'package:near_pay_app/network/model/response/callback_response.dart';
-import 'package:near_pay_app/network/model/response/error_response.dart';
-import 'package:near_pay_app/network/model/response/pending_response.dart';
-import 'package:near_pay_app/network/model/response/price_response.dart';
-import 'package:near_pay_app/network/model/response/process_response.dart';
+import 'package:near_pay_app/core/models/state_block.dart';
+import 'package:near_pay_app/data/network/model/base_request.dart';
+import 'package:near_pay_app/data/network/model/block_types.dart';
+import 'package:near_pay_app/data/network/model/request/account_history_request.dart';
+import 'package:near_pay_app/data/network/model/request/account_info_request.dart';
+import 'package:near_pay_app/data/network/model/request/accounts_balances_request.dart';
+import 'package:near_pay_app/data/network/model/request/block_info_request.dart';
+import 'package:near_pay_app/data/network/model/request/pending_request.dart';
+import 'package:near_pay_app/data/network/model/request/process_request.dart';
+import 'package:near_pay_app/data/network/model/request/subscribe_request.dart';
+import 'package:near_pay_app/data/network/model/request_item.dart';
+import 'package:near_pay_app/data/network/model/response/account_history_response.dart';
+import 'package:near_pay_app/data/network/model/response/account_info_response.dart';
+import 'package:near_pay_app/data/network/model/response/accounts_balances_response.dart';
+import 'package:near_pay_app/data/network/model/response/alerts_response_item.dart';
+import 'package:near_pay_app/data/network/model/response/block_info_item.dart';
+import 'package:near_pay_app/data/network/model/response/callback_response.dart';
+import 'package:near_pay_app/data/network/model/response/error_response.dart';
+import 'package:near_pay_app/data/network/model/response/pending_response.dart';
+import 'package:near_pay_app/data/network/model/response/price_response.dart';
+import 'package:near_pay_app/data/network/model/response/process_response.dart';
+import 'package:near_pay_app/presantation/bus/callback_event.dart';
+import 'package:near_pay_app/presantation/bus/conn_status_event.dart';
+import 'package:near_pay_app/presantation/bus/price_event.dart';
+import 'package:near_pay_app/presantation/bus/subscribe_event.dart';
+
 import 'package:near_pay_app/service_locator.dart';
 
 
@@ -47,9 +48,9 @@ import 'model/response/subscribe_response.dart';
 
 
 // Server Connection String
-const String _SERVER_ADDRESS = "wss://app.natrium.io";
-const String _SERVER_ADDRESS_HTTP = "https://app.natrium.io/api";
-const String _SERVER_ADDRESS_ALERTS = "https://app.natrium.io/alerts";
+const String _SERVER_ADDRESS = "";
+const String _SERVER_ADDRESS_HTTP = "";
+const String _SERVER_ADDRESS_ALERTS = "";
 
 Map decodeJson(dynamic src) {
   return json.decode(src);

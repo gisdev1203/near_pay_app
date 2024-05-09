@@ -4,14 +4,14 @@ import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:flutter/material.dart';
 import 'package:near_pay_app/appstate_container.dart';
+import 'package:near_pay_app/data/network/model/response/alerts_response_item.dart';
 import 'package:near_pay_app/dimens.dart';
 import 'package:near_pay_app/localization.dart';
-import 'package:near_pay_app/network/model/response/alerts_response_item.dart';
+import 'package:near_pay_app/presantation/ui/widgets/buttons.dart';
+import 'package:near_pay_app/presantation/utils/caseconverter.dart';
+import 'package:near_pay_app/presantation/utils/sharedprefsutil.dart';
 import 'package:near_pay_app/service_locator.dart';
 import 'package:near_pay_app/styles.dart';
-import 'package:near_pay_app/ui/widgets/buttons.dart';
-import 'package:near_pay_app/utils/caseconverter.dart';
-import 'package:near_pay_app/utils/sharedprefsutil.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 

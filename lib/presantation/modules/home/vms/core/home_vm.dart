@@ -2,7 +2,8 @@ import 'dart:developer';
 
 import 'package:flutterchain/flutterchain_lib.dart';
 import 'package:flutterchain/flutterchain_lib/models/core/wallet.dart';
-import 'package:near_pay_app/modules/home/stores/core/user_store.dart';
+
+import 'package:near_pay_app/presantation/modules/home/stores/core/user_store.dart';
 
 
 class HomeVM {

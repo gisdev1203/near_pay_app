@@ -28,6 +28,5 @@ class SubscribeRequest extends BaseRequest {
   SubscribeRequest({this.action = Actions.SUBSCRIBE, required this.account, required this.currency, required this.uuid, required this.fcmToken, required this.notificationEnabled}) : super();
 
   factory SubscribeRequest.fromJson(Map<String, dynamic> json) => _$SubscribeRequestFromJson(json);
-  @override
   Map<String, dynamic> toJson() => _$SubscribeRequestToJson(this);
 }

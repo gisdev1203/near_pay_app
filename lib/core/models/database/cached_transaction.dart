@@ -1,5 +1,6 @@
 
-import 'package:near_pay_app/models/transaction.dart';
+import 'package:near_pay_app/core/models/transaction.dart';
+
 
 class CachedTransaction {
   final String id;

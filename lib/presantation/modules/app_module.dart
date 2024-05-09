@@ -11,14 +11,15 @@ import 'package:flutterchain/flutterchain_lib/services/chains/near_blockchain_se
 
 
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:near_pay_app/data/network/helper_network.dart';
 import 'package:near_pay_app/main.dart';
-import 'package:near_pay_app/modules/home/pages/core/create_wallet_page.dart';
-import 'package:near_pay_app/modules/home/pages/core/crypto_actions_page.dart';
-import 'package:near_pay_app/modules/home/pages/core/home_page.dart';
-import 'package:near_pay_app/modules/home/services/helper_service.dart';
-import 'package:near_pay_app/network/helper_network.dart';
-import 'package:near_pay_app/routes/routes.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/create_wallet_page.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/crypto_actions_page.dart';
+import 'package:near_pay_app/presantation/modules/home/pages/core/home_page.dart';
+import 'package:near_pay_app/presantation/modules/home/services/helper_service.dart';
+import 'package:near_pay_app/presantation/routes/routes.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
+
 import 'package:provider/provider.dart';
 
 class AppModule extends Module {
@@ -35,7 +36,7 @@ class AppModule extends Module {
         Provider<NearNetworkClient>(create: (_) => NearNetworkClient(baseUrl: NearBlockChainNetworkUrls.listOfUrls.first, dio: Dio())),
         Provider<NearRpcClient>(create: (_) => NearRpcClient(networkClient: Modular.get<NearNetworkClient>())),
         
-        Provider<NearHelperNetworkClient>(create: (_) => NearHelperNetworkClient(baseUrl: 'https://stark-everglades-95819.herokuapp.com', dio: Dio())),
+        Provider<NearHelperNetworkClient>(create: (_) => NearHelperNetworkClient(baseUrl: '', dio: Dio())),
         Provider<NearHelperService>(create: (_) => NearHelperService(Modular.get<NearHelperNetworkClient>())),
         // Repeat for Bitcoin-related services
         Provider<WalletRepository>(create: (_) => WalletRepository(secureStorage: Modular.get<FlutterSecureStorage>())),
@@ -47,7 +48,7 @@ Provider<NearNetworkClient>(create: (_) => NearNetworkClient(baseUrl: NearBlockC
 Provider<NearRpcClient>(create: (_) => NearRpcClient(networkClient: Modular.get<NearNetworkClient>())),
 Provider<NearBlockChainService>(create: (_) => NearBlockChainService(jsVMService: Modular.get(), nearRpcClient: Modular.get<NearRpcClient>())),
 // Assuming NearHelperNetworkClient and NearHelperService are correctly defined in your project
-Provider<NearHelperNetworkClient>(create: (_) => NearHelperNetworkClient(baseUrl: 'https://stark-everglades-95819.herokuapp.com', dio: Dio())),
+Provider<NearHelperNetworkClient>(create: (_) => NearHelperNetworkClient(baseUrl: '', dio: Dio())),
 Provider<NearHelperService>(create: (_) => NearHelperService(Modular.get<NearHelperNetworkClient>())),
 // WalletRepository and FlutterChainLibrary assuming these are based on the above or other provided services
 Provider<WalletRepository>(create: (_) => WalletRepository(secureStorage: Modular.get<FlutterSecureStorage>())),

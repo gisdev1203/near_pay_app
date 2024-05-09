@@ -374,7 +374,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
       StateContainer.of(context)!.wallet.accountBalance += BigInt.parse(widget.amountRaw);
       // Show complete
       Contact? contact = await sl.get<DBHelper>().getContactWithAddress(widget.destination);
-      String? contactName = contact?.name;
+      String? contactName = contact.name;
       Navigator.of(context).popUntil(RouteUtils.withNameLike('/home'));
       StateContainer.of(context)!.requestUpdate();
       setState(() {

@@ -196,7 +196,7 @@ class StateContainerState extends State<StateContainer> {
       }
       AlertResponseItem? alert =
           await sl.get<AccountService>().getAlert(localeString);
-      if (await sl.get<SharedPrefsUtil>().shouldShowAlert(alert!)) {
+      if (await sl.get<SharedPrefsUtil>().shouldShowAlert(alert)) {
       // See if we should display this one again
       if (await sl.get<SharedPrefsUtil>().alertIsRead(alert)) {
         setAlertRead();
@@ -235,7 +235,7 @@ class StateContainerState extends State<StateContainer> {
     // Set currency locale here for the UI to access
     sl.get<SharedPrefsUtil>().getCurrency(deviceLocale).then((currency) {
       setState(() {
-        currencyLocale = currency!.getLocale().toString();
+        currencyLocale = currency.getLocale().toString();
         curCurrency = currency;
       });
     });
@@ -606,8 +606,8 @@ class StateContainerState extends State<StateContainer> {
     sl.get<DBHelper>().getAccounts(await getSeed()).then((accounts) {
       for (var account in accounts) {
         resp.balances.forEach((address, balance) {
-          String combinedBalance = (BigInt.tryParse(balance!.balance)! +
-                  BigInt.tryParse(balance!.pending))
+          String combinedBalance = (BigInt.tryParse(balance.balance)! +
+                  BigInt.tryParse(balance.pending))
               .toString();
           if (address == account.address &&
               combinedBalance != account.balance) {

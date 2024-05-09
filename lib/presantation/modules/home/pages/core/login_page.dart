@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:near_pay_app/modules/home/components/social_button.dart';
+import 'package:near_pay_app/presantation/modules/home/components/social_button.dart';
+
 
 
 class LoginPage extends StatelessWidget {

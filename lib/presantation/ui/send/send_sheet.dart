@@ -591,7 +591,7 @@ class _SendSheetState extends State<SendSheet> {
                           _pasteButtonVisible = false;
                           _showContactButton = false;
                         });
-                        _sendAddressController.text = contact!.name;
+                        _sendAddressController.text = contact.name;
                       }
                                             // If amount is present, fill it and go to SendConfirm
                       bool hasError = false;
@@ -650,7 +650,7 @@ class _SendSheetState extends State<SendSheet> {
                                     ? contact.address
                                     : address.address,
                                 contactName:
-                                    contact!.name,
+                                    contact.name,
                                 maxSend: _isMaxSend(),
                                 localCurrency: _localCurrencyMode
                                     ? _sendAmountController.text

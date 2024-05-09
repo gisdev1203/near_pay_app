@@ -1,5 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'package:near_pay_app/network/api_service.dart';
+import 'package:near_pay_app/data/network/api_service.dart';
+
 
 
 final GetIt getIt = GetIt.instance;

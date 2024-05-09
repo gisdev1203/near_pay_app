@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/see_tx_in_explorer.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/see_tx_in_explorer.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
+
 
 
 class TransactionResult extends StatefulWidget {

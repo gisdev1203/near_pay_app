@@ -3,8 +3,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:near_pay_app/presantation/ui/util/routes.dart';
 
-import 'package:near_pay_app/ui/util/routes.dart';
+
 
 
 //  Replace all usage with the class in sheet_util.dart
@@ -30,7 +31,7 @@ class AppSheets {
         barrier: barrier,
         animationDurationMs: animationDurationMs,
         closeOnTap: closeOnTap,
-        onDisposed: onDisposed);
+        onDisposed: onDisposed, settings: null);
     if (removeUntilHome) {
       return Navigator.pushAndRemoveUntil<T>(
           context, route, RouteUtils.withNameLike('/home'));
@@ -56,7 +57,7 @@ class AppSheets {
             barrierLabel:
                 MaterialLocalizations.of(context).modalBarrierDismissLabel,
             barrier: barrier,
-            animationDurationMs: animationDurationMs));
+            animationDurationMs: animationDurationMs, settings: null));
   }
 }
 

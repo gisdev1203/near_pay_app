@@ -5,21 +5,24 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:near_pay_app/app_icons.dart';
 import 'package:near_pay_app/appstate_container.dart';
-import 'package:near_pay_app/bus/fcm_update_event.dart';
+import 'package:near_pay_app/core/models/authentication_method.dart';
+import 'package:near_pay_app/core/models/vault.dart';
+
 import 'package:near_pay_app/dimens.dart';
 import 'package:near_pay_app/localization.dart';
-import 'package:near_pay_app/models/authentication_method.dart';
-import 'package:near_pay_app/models/vault.dart';
+import 'package:near_pay_app/presantation/bus/fcm_update_event.dart';
+import 'package:near_pay_app/presantation/ui/util/routes.dart';
+import 'package:near_pay_app/presantation/ui/widgets/buttons.dart';
+import 'package:near_pay_app/presantation/ui/widgets/dialog.dart';
+import 'package:near_pay_app/presantation/ui/widgets/flat_button.dart';
+import 'package:near_pay_app/presantation/ui/widgets/security.dart';
+import 'package:near_pay_app/presantation/utils/biometrics.dart';
+import 'package:near_pay_app/presantation/utils/caseconverter.dart';
+import 'package:near_pay_app/presantation/utils/sharedprefsutil.dart';
+
 import 'package:near_pay_app/service_locator.dart';
 import 'package:near_pay_app/styles.dart';
-import 'package:near_pay_app/ui/util/routes.dart';
-import 'package:near_pay_app/ui/widgets/buttons.dart';
-import 'package:near_pay_app/ui/widgets/dialog.dart';
-import 'package:near_pay_app/ui/widgets/flat_button.dart';
-import 'package:near_pay_app/ui/widgets/security.dart';
-import 'package:near_pay_app/utils/biometrics.dart';
-import 'package:near_pay_app/utils/caseconverter.dart';
-import 'package:near_pay_app/utils/sharedprefsutil.dart';
+
 
 
 class AppLockScreen extends StatefulWidget {
@@ -281,7 +284,7 @@ class _AppLockScreenState extends State<AppLockScreen> {
                                       });
                                     });
                                   });
-                                });
+                                }, cancelText: '', cancelAction: null);
                               });
                             },
                             highlightColor:

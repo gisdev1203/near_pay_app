@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:near_pay_app/app_icons.dart';
 import 'package:near_pay_app/appstate_container.dart';
 import 'package:near_pay_app/localization.dart';
+import 'package:near_pay_app/presantation/utils/sharedprefsutil.dart';
 import 'package:near_pay_app/service_locator.dart';
 import 'package:near_pay_app/styles.dart';
-import 'package:near_pay_app/utils/hapticutil.dart';
-import 'package:near_pay_app/utils/sharedprefsutil.dart';
+
 
 
 

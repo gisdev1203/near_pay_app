@@ -1,9 +1,10 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:json_annotation/json_annotation.dart';
+import 'package:near_pay_app/data/network/model/response/account_history_response_item.dart';
 
 
-import 'package:near_pay_app/network/model/response/account_history_response_item.dart';
+
 
 part 'account_history_response.g.dart';
 

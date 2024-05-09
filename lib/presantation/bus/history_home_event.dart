@@ -1,5 +1,6 @@
 import 'package:event_taxi/event_taxi.dart';
-import 'package:near_pay_app/network/model/response/account_history_response_item.dart';
+import 'package:near_pay_app/data/network/model/response/account_history_response_item.dart';
+
 
 
 class HistoryHomeEvent implements Event {

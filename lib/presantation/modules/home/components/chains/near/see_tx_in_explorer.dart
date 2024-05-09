@@ -5,8 +5,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutterchain/flutterchain_lib/constants/core/supported_blockchains.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/near_vm.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/near_vm.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
 
 
 class SeeTransactionInfoNearBlockchain extends StatefulWidget {

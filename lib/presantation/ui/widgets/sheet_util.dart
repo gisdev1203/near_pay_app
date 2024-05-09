@@ -3,7 +3,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:near_pay_app/ui/util/routes.dart';
+import 'package:near_pay_app/presantation/ui/util/routes.dart';
+
 
 
 class Sheets {
@@ -32,7 +33,7 @@ class Sheets {
         barrier: barrier,
         animationDurationMs: animationDurationMs,
         closeOnTap: closeOnTap,
-        onDisposed: onDisposed);
+        onDisposed: onDisposed, settings: null);
     if (removeUntilHome) {
       return Navigator.pushAndRemoveUntil<T>(
           context, route, RouteUtils.withNameLike('/home'));
@@ -151,7 +152,7 @@ class _AppHeightNineModalRoute<T> extends PopupRoute<T> {
   AnimationController createAnimationController() {
     assert(_animationController == null);
     _animationController =
-        BottomSheet.createAnimationController(navigator.overlay);
+        BottomSheet.createAnimationController(navigator!.overlay as TickerProvider);
     _animationController.duration = Duration(milliseconds: animationDurationMs);
     this.appSheetAnimation = CurvedAnimation(
         parent: _animationController,
@@ -259,13 +260,13 @@ class _AppHeightEightSheetLayout extends SingleChildLayoutDelegate {
 
 class _AppHeightEightModalRoute<T> extends PopupRoute<T> {
   _AppHeightEightModalRoute(
-      {this.builder,
-      this.barrierLabel,
-      this.color,
-      this.radius,
-      RouteSettings settings,
-      this.barrier,
-      this.animationDurationMs})
+      {required this.builder,
+      required this.barrierLabel,
+      required this.color,
+      required this.radius,
+      required RouteSettings settings,
+      required this.barrier,
+      required this.animationDurationMs})
       : super(settings: settings);
 
   final WidgetBuilder builder;
@@ -290,7 +291,7 @@ class _AppHeightEightModalRoute<T> extends PopupRoute<T> {
   AnimationController createAnimationController() {
     assert(_animationController == null);
     _animationController =
-        BottomSheet.createAnimationController(navigator.overlay);
+        BottomSheet.createAnimationController(navigator!.overlay as TickerProvider);
     _animationController.duration = Duration(milliseconds: animationDurationMs);
     this.appSheetAnimation = CurvedAnimation(
         parent: _animationController,

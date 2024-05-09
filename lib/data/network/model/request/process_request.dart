@@ -27,6 +27,5 @@ class ProcessRequest extends BaseRequest {
   }
 
   factory ProcessRequest.fromJson(Map<String, dynamic> json) => _$ProcessRequestFromJson(json);
-  @override
   Map<String, dynamic> toJson() => _$ProcessRequestToJson(this);
 }

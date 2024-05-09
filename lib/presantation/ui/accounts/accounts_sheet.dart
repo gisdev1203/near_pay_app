@@ -88,7 +88,7 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
       resp.balances.forEach((address, balance) {
         address = address.replaceAll("xrb_", "nano_");
         String combinedBalance = (BigInt.tryParse(balance.balance) +
-                BigInt.tryParse(balance!.pending))
+                BigInt.tryParse(balance.pending))
             .toString();
         if (account.address == address && combinedBalance != account.balance) {
           sl.get<DBHelper>().updateAccountBalance(account, combinedBalance);
@@ -300,7 +300,7 @@ class _AppAccountsWidgetState extends State<AppAccountsWidget> {
                                       if (widget.accounts.length * 72.0 >=
                                           box!.size.height) {
                                         _scrollController.animateTo(
-                                          newAccount!.index * 72.0 >
+                                          newAccount.index * 72.0 >
                                                   _scrollController
                                                       .position.maxScrollExtent
                                               ? _scrollController.position

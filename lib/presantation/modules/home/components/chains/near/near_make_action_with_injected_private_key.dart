@@ -7,12 +7,12 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutterchain/flutterchain_lib/constants/core/blockchain_response.dart';
 import 'package:flutterchain/flutterchain_lib/formaters/chains/near_formater.dart';
 import 'package:flutterchain/flutterchain_lib/services/chains/near_blockchain_service.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/near_action_text_field.dart';
-import 'package:near_pay_app/modules/home/components/chains/near/see_tx_in_explorer.dart';
-import 'package:near_pay_app/modules/home/components/core/crypto_actions_card.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/near_vm.dart';
-import 'package:near_pay_app/modules/home/vms/chains/near/ui_state.dart';
-import 'package:near_pay_app/theme/app_theme.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/near_action_text_field.dart';
+import 'package:near_pay_app/presantation/modules/home/components/chains/near/see_tx_in_explorer.dart';
+import 'package:near_pay_app/presantation/modules/home/components/core/crypto_actions_card.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/near_vm.dart';
+import 'package:near_pay_app/presantation/modules/home/vms/chains/near/ui_state.dart';
+import 'package:near_pay_app/presantation/theme/app_theme.dart';
 
 class NearMakeActionWithInjectedPrivateKeyInNearApiJsFormat
     extends StatefulWidget {

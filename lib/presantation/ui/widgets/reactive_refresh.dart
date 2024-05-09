@@ -92,16 +92,16 @@ class ReactiveRefreshIndicator extends StatefulWidget {
   /// An empty string may be passed to avoid having anything read by screen reading software.
   /// The [semanticsValue] may be used to specify progress on the widget. The
   const ReactiveRefreshIndicator({
-    Key key,
-    @required this.child,
+    required Key key,
+    required this.child,
     this.displacement = 40.0,
-    @required this.onRefresh,
-    @required this.isRefreshing,
-    this.color,
-    this.backgroundColor,
+    required this.onRefresh,
+    required this.isRefreshing,
+    required this.color,
+    required this.backgroundColor,
     this.notificationPredicate = defaultScrollNotificationPredicate,
-    this.semanticsLabel,
-    this.semanticsValue,
+    required this.semanticsLabel,
+    required this.semanticsValue,
   }) : assert(notificationPredicate != null),
        super(key: key);
 
@@ -156,17 +156,17 @@ class ReactiveRefreshIndicator extends StatefulWidget {
 /// Contains the state for a [RefreshIndicator]. This class can be used to
 /// programmatically show the refresh indicator, see the [show] method.
 class ReactiveRefreshIndicatorState extends State<ReactiveRefreshIndicator> with TickerProviderStateMixin<ReactiveRefreshIndicator> {
-  AnimationController _positionController;
-  AnimationController _scaleController;
-  Animation<double> _positionFactor;
-  Animation<double> _scaleFactor;
-  Animation<double> _value;
-  Animation<Color> _valueColor;
+  late AnimationController _positionController;
+  late AnimationController _scaleController;
+  late Animation<double> _positionFactor;
+  late Animation<double> _scaleFactor;
+  late Animation<double> _value;
+  late Animation<Color> _valueColor;
 
-  _RefreshIndicatorMode _mode;
-  Future<void> _pendingRefreshFuture;
-  bool _isIndicatorAtTop;
-  double _dragOffset;
+  late _RefreshIndicatorMode _mode;
+  late Future<void> _pendingRefreshFuture;
+  late bool _isIndicatorAtTop;
+  late double _dragOffset;
 
   static final Animatable<double> _threeQuarterTween = Tween<double>(begin: 0.0, end: 0.75);
   static final Animatable<double> _kDragSizeFactorLimitTween = Tween<double>(begin: 0.0, end: _kDragSizeFactorLimit);
@@ -247,7 +247,7 @@ class ReactiveRefreshIndicatorState extends State<ReactiveRefreshIndicator> with
         if (notification.metrics.extentBefore > 0.0) {
           _dismiss(_RefreshIndicatorMode.canceled);
         } else {
-          _dragOffset -= notification.scrollDelta;
+          _dragOffset -= notification.scrollDelta!;
           _checkDragOffset(notification.metrics.viewportDimension);
         }
       }

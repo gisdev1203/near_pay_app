@@ -4,7 +4,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:near_pay_app/app_icons.dart';
-import 'package:near_pay_app/utils/user_data_util.dart';
+import 'package:near_pay_app/presantation/utils/user_data_util.dart';
+
 
 
 class BeforeScanScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _BeforeScanScreenState extends State<BeforeScanScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 150), () async {
-      String scanResult = await UserDataUtil.getQRData(DataType.MANTA_ADDRESS, context);
+      String? scanResult = await UserDataUtil.getQRData(DataType.MANTA_ADDRESS, context);
       Navigator.pop(context, scanResult);
     });
   }

@@ -6,6 +6,8 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:near_pay_app/appstate_container.dart';
 import 'package:near_pay_app/localization.dart';
+import 'package:near_pay_app/presantation/ui/widgets/outline_button.dart';
+import 'package:near_pay_app/presantation/utils/user_data_util.dart';
 import 'package:near_pay_app/styles.dart';
 
 
@@ -18,7 +20,7 @@ class MnemonicDisplay extends StatefulWidget {
   final bool showButton;
 
   const MnemonicDisplay(
-      {super.key, @required this.wordList,
+      {super.key, required this.wordList,
       this.obscureSeed = false,
       this.showButton = true});
 
@@ -28,9 +30,9 @@ class MnemonicDisplay extends StatefulWidget {
 
 class _MnemonicDisplayState extends State<MnemonicDisplay> {
   static final List<String> _obscuredSeed = List.filled(24, '•' * 6);
-  bool _seedCopied;
-  bool _seedObscured;
-  Timer _seedCopiedTimer;
+  late bool _seedCopied;
+  late bool _seedObscured;
+  late Timer _seedCopiedTimer;
 
   @override
   void initState() {
@@ -48,7 +50,7 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
       ret.add(Container(
         width: (MediaQuery.of(context).size.width),
         height: 1,
-        color: StateContainer.of(context).curTheme.text05,
+        color: StateContainer.of(context)!.curTheme.text05,
       ));
       // Build individual items
       List<Widget> items = [];
@@ -97,7 +99,7 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
         ret.add(Container(
           width: (MediaQuery.of(context).size.width),
           height: 1,
-          color: StateContainer.of(context).curTheme.text05,
+          color: StateContainer.of(context)!.curTheme.text05,
         ));
       }
     }
@@ -130,12 +132,12 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
                     margin: const EdgeInsetsDirectional.only(top: 8),
                     child: _seedObscured
                         ? AutoSizeText(
-                            AppLocalization.of(context).tapToReveal,
+                            AppLocalization.of(context)!.tapToReveal,
                             style: AppStyles.textStyleParagraphThinPrimary(
                                 context),
                           )
                         : Text(
-                            AppLocalization.of(context).tapToHide,
+                            AppLocalization.of(context)!.tapToHide,
                             style: AppStyles.textStyleParagraphThinPrimary(
                                 context),
                           ),
@@ -165,24 +167,24 @@ class _MnemonicDisplayState extends State<MnemonicDisplay> {
                 },
                 splashColor: _seedCopied
                     ? Colors.transparent
-                    : StateContainer.of(context).curTheme.primary30,
+                    : StateContainer.of(context)!.curTheme.primary30,
                 highlightColor: _seedCopied
                     ? Colors.transparent
-                    : StateContainer.of(context).curTheme.primary15,
+                    : StateContainer.of(context)!.curTheme.primary15,
                 highlightedBorderColor: _seedCopied
-                    ? StateContainer.of(context).curTheme.success
-                    : StateContainer.of(context).curTheme.primary,
+                    ? StateContainer.of(context)!.curTheme.success
+                    : StateContainer.of(context)!.curTheme.primary,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(100.0)),
                 borderSide: BorderSide(
                     color: _seedCopied
-                        ? StateContainer.of(context).curTheme.success
-                        : StateContainer.of(context).curTheme.primary,
+                        ? StateContainer.of(context)!.curTheme.success
+                        : StateContainer.of(context)!.curTheme.primary,
                     width: 1.0),
                 child: AutoSizeText(
                   _seedCopied
-                      ? AppLocalization.of(context).copied
-                      : AppLocalization.of(context).copy,
+                      ? AppLocalization.of(context)!.copied
+                      : AppLocalization.of(context)?.copy,
                   textAlign: TextAlign.center,
                   style: _seedCopied
                       ? AppStyles.textStyleButtonSuccessSmallOutline(context)

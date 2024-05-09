@@ -1,8 +1,9 @@
 // ignore_for_file: unnecessary_null_comparison, deprecated_member_use, prefer_initializing_formals
 
 import 'package:json_annotation/json_annotation.dart';
-import 'package:near_pay_app/models/address.dart';
-import 'package:near_pay_app/utils/numberutil.dart';
+import 'package:near_pay_app/core/models/address.dart';
+import 'package:near_pay_app/presantation/utils/numberutil.dart';
+
 
 
 
