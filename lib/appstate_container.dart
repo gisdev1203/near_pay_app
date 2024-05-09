@@ -196,7 +196,7 @@ class StateContainerState extends State<StateContainer> {
       }
       AlertResponseItem? alert =
           await sl.get<AccountService>().getAlert(localeString);
-      if (await sl.get<SharedPrefsUtil>().shouldShowAlert(alert)) {
+      if (await sl.get<SharedPrefsUtil>().shouldShowAlert(alert!)) {
       // See if we should display this one again
       if (await sl.get<SharedPrefsUtil>().alertIsRead(alert)) {
         setAlertRead();
