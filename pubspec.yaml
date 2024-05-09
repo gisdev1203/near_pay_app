@@ -91,39 +91,6 @@ dependencies:
   flare_flutter: ^3.0.2
   auto_size_text: ^3.0.0
   flutter_slidable: ^3.1.0
-  nearpay_flutter_sdk:
-    git: https://github.com/nearpayio/nearpay-flutter-sdk.git
-  devicelocale: ^0.7.1
-   
-  analyzer: ^2.7.0
-  dart_style: ^2.0.0
-  
-  device_info: ^2.0.3
-  
-  logger: ^2.0.1
-  flutter_webview_plugin: ^0.4.0
-
-  qr_flutter: ^4.0.0
-  barcode_scan:
-    git:
-      url: https://github.com/bbedward/flutter_barcode_reader.git
-      ref: master
-  share:
-    git:
-      url: https://github.com/bbedward/plugins.git
-      path: packages/share
-      ref: master
-  file_picker: ^5.3.1
-  uni_links:
-    git:
-      url: https://github.com/bbedward/uni_links.git
-      ref: master
-  
-  vibrate:
-    git:
-      url: https://github.com/bbedward/flutter_vibrate.git
-      ref: master
-  oktoast: ^3.0.0
   
  
   validators: ^3.0.0
