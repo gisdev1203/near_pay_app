@@ -100,7 +100,29 @@ dependencies:
   validators: ^3.0.0
   quiver: ^3.0.1+1
 
- 
+  nearpay_flutter_sdk:
+    git: https://github.com/nearpayio/nearpay-flutter-sdk.git
+
+  barcode_scan:
+    git:
+      url: https://github.com/bbedward/flutter_barcode_reader.git
+      ref: master
+
+  share:
+    git:
+      url: https://github.com/bbedward/plugins.git
+      path: packages/share
+      ref: master
+  uni_links:
+    git:
+      url: https://github.com/bbedward/uni_links.git
+      ref: master
+
+  vibrate:
+    git:
+      url: https://github.com/bbedward/flutter_vibrate.git
+      ref: master
+
 
 
 dev_dependencies:
